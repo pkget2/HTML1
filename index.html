@@ -11,37 +11,50 @@
     h1 {
       font-size:50px;
       text-align:center;
+      border-bottom: 1px solid gray;
+      margin:0; padding:10px;
     }
-    .saw {
-      color: gray;
+    ol{
+      border-right: 1px solid gray;
+      width:100px;
+      margin:0;
+      padding:10px;
+    }
+    body{
+      margin:25px;
+      margin-left:13px;
+      margin-right:13px;
     }
     #active{
       color:red;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:20px;
     }
   </style>
 </head>
 <body>
   <h1><a href="https://www.naver.com">WEB</a> </h1>
-  <ol>
-    <li><a href="A.html" class="saw">Html</a></li>
-    <li><a href="B.html" class="saw" id="active">CSS</a></li>
-    <li><a href="C.html">Java</a></li>
-  </ol>
-<!--
-<h1><a href="https://www.naver.com"><font color="red">WEB</font> </a> </h1>
-<ol>
-<li><a href="A.html"><font color="red">Html</font></a></li>
-<li><a href="B.html"><font color="red">CSS</font></a></li>
-<li><a href="C.html"><font color="red">Java</font></a></li>
-</ol>
--->
-<h2>WEB 입니다.</h2>
-
-hello world
-hyper txt <strong>hi</strong>
-<u>hi</u> there<br>
-want some photo?
-<img src="coding.jpg" width="100%">
-
+  <div id="grid">
+    <ol>
+      <li><a href="A.html">Html</a></li>
+      <li><a href="B.html" id="active">CSS</a></li>
+      <li><a href="C.html">Java</a></li>
+    </ol>
+    <div>
+      <h2>WEB 입니다.</h2>
+      <p>
+      hello world
+      hyper txt <strong>hi</strong>
+      <u>hi</u> there<br>
+      want some photo?
+      <img src="coding.jpg" width="100%">
+      </p>
+    </div>
+  </div>
 </body>
 </html>
